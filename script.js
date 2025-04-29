@@ -23,6 +23,7 @@ const menu = [
     // { menu: "", price: ,shop:"" },
     // { menu: "", price: ,shop:"" },
     // { menu: "", price: ,shop:"" },
+    // 参照元:https://www.f-marinos.com/gourmet_promo/20250514/
 
 
 
@@ -53,14 +54,24 @@ button.addEventListener("click", function() {
         resultDiv.innerHTML = "ガチャ失敗！もう一回！";
     } else {
         let html = "<h2>ガチャ結果🔵⚪🔴 </h2><ul>";
+
+          // ガチャ結果テキスト作成（ツイート用）
+          let tweetText = "【スタグルガチャ結果】\n";
         selectedItems.forEach(item => {
             html += `<li>
                 メニュー名：${item.menu}<br>
                 店舗名：${item.shop}<br>
                 金額：${item.price}円
-            </li><br>`;
+             </li><br>`;
+            tweetText += `・${item.menu}（${item.shop}）：${item.price}円\n`;
         });
+
+        tweetText += `合計金額：${total}円！`;
+        const tweetURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+
         html += `</ul><p>合計金額：${total}円</p>`;
+        html += `<p><a href="${tweetURL}" target="_blank" rel="noopener noreferrer">ツイートする</a></p>`;
+
         resultDiv.innerHTML = html;
     }
 });
