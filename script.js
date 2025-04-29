@@ -52,7 +52,7 @@ button.addEventListener("click", function() {
     if (selectedItems.length === 0) {
         resultDiv.innerHTML = "ガチャ失敗！もう一回！";
     } else {
-        let html = "<h2>ガチャ結果🎯</h2><ul>";
+        let html = "<h2>ガチャ結果🔵⚪🔴 </h2><ul>";
         selectedItems.forEach(item => {
             html += `<li>
                 メニュー名：${item.menu}<br>

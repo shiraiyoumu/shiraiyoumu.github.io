@@ -7,9 +7,47 @@ body {
 button {
     padding: 10px 20px;
     font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #result {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  li {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
 }
