@@ -70,7 +70,7 @@ button.addEventListener("click", function() {
         const tweetURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
         html += `</ul><p>合計金額：${total}円</p>`;
-        html += `<p><a href="${tweetURL}" class="twitter-share-button" target="_blank" rel="noopener noreferrer">ツイートする</a></p>`;
+        html += `<p><a href="${tweetURL}" class="twitter-button" target="_blank" rel="noopener noreferrer">ツイートする</a></p>`;
 
         resultDiv.innerHTML = html;
     }
