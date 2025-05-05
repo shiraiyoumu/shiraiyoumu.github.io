@@ -53,7 +53,7 @@ button.addEventListener("click", function() {
     let selectedItems = [];
     let total = 0;
     const target = 2000;
-    const tolerance = 500;
+    const tolerance = 400;
 
     let shuffledMenu = [...menu].sort(() => 0.5 - Math.random());
 
