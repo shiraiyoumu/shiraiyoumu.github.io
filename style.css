@@ -54,20 +54,20 @@ button:hover {
 
 /* ツイートボタンのスタイル */
 .tweet-button {
-  display: inline-block;
-  background-color: #1DA1F2; /* Twitterブルー */
+  background-color: #1DA1F2;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 10px 20px;
-  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 9999px;
   text-decoration: none;
-  border-radius: 8px;
+  border: none;
+  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
 .tweet-button:hover {
-  background-color: #0d8ddb; /* ホバー時にちょっと濃く */
+  background-color: #0d8ddb;
 }
 
 @media screen and (max-width: 600px) {
