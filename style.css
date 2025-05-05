@@ -52,20 +52,21 @@ li {
 }
 
 .tweet-button {
-    display: inline-block;
-    background-color: #1DA1F2;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 24px;
-    margin-top: 16px;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #1DA1F2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 24px;
+  margin-top: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 
 .tweet-button:hover {
-    background-color: #0d8ddb;
+  background-color: #0d8ddb;
 }
 
 /* スマホ対応 */
