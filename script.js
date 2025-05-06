@@ -83,7 +83,7 @@ button.addEventListener("click", function() {
             tweetText += `・${item.menu}（${item.shop}）：${item.price}円\n`;
         });
 
-        tweetText += `合計金額：${total}円！ #マリノススタグルガチャ`;
+        tweetText += `合計金額：${total}円！ #マリノススタグルガチャ #マリノススタグル`;
         const tweetURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
         html += `</ul><p>合計金額：${total}円</p>`;
